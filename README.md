@@ -234,15 +234,15 @@ This evaluation is done mainly through a case study of comparing the code using 
 ### Claim 2: Competitive Accuracy
 *MTLLM(MTP) achieves similar or better accuracy than baseline frameworks*
 
-To support this claim we do an evaluation where we run the benchmark programs 20 trials and take the average success rate. In addition to this, we conduct a thorough evaluation with multiple LLMs using the GSM8k dataset for the math problem benchmark. However, this requires running llama models on local hardware which would produce variable results. We have reasonable timeout limits. Hence, we only include the scripts for running the experiments with OpenAI GPT models.
+To support this claim we do an evaluation where across the 13 benchmarks we run each benchmark with 20 unique inputs and run each benchmark, input pair 5 times. Correctness is evaluated using defined correctness criteria as explained in the paper. In addition to this, we conduct a thorough evaluation with multiple LLMs using the GSM8k dataset for the math problem benchmark. However, this requires running llama models on local hardware which would produce variable results. We have reasonable timeout limits. Hence, we only include the scripts for running the experiments with OpenAI GPT models.
 
-**Evidence**: Run the evaluation suite to reproduce accuracy results from Table 2 in the paper.
+**Evidence**: Run the evaluation suite to reproduce accuracy results shown in Figure 18, 19 and 20.
 
 ```bash
 # (requires OpenAI API key)
 cd eval
 
-# Generate accuracy summary statistics
+# Generate correctness statistics
 python overall_accuracy.py
 
 # Generate evaluation results for the math problem benchmark for the GSM8k dataset.
