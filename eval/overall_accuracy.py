@@ -5,12 +5,14 @@ import time
 import logging
 import statistics
 from datetime import datetime
+import json
 
 # Disable OpenAI token caching for inference benchmarking
 os.environ["OPENAI_API_CACHE"] = "false"
 os.environ["OPENAI_CACHE"] = "false"
 
 import logging
+import shutil
 
 # Suppress WARNING logs from DSPy
 logging.getLogger().setLevel(logging.ERROR)
@@ -44,6 +46,16 @@ def run_file_and_capture_output(file_path, implementation):
         elif implementation == 'mtllm':
             cmd = ['jac', 'run', file_path]
         else:  # dspy
+            # Remove __pycache__ directories before running
+            folder = os.path.dirname(file_path)
+            for root, dirs, files in os.walk(folder):
+                for d in dirs:
+                    if d == '__pycache__':
+                        pycache_path = os.path.join(root, d)
+                        try:
+                            shutil.rmtree(pycache_path)
+                        except Exception as e:
+                            logging.warning(f"Failed to remove {pycache_path}: {e}")
             cmd = ['python', file_path]
         
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
@@ -79,17 +91,38 @@ def run_file_and_capture_output(file_path, implementation):
             'command': 'Error before execution'
         }
 
-def run_multiple_times(file_path, implementation, num_runs=10):
+def run_multiple_times(file_path, implementation, num_runs, benchmark):
     """Run a file multiple times and collect statistics"""
     results = []
     execution_times = []
     success_count = 0
-    
+
     logging.info(f"Running {file_path} {num_runs} times...")
-    
-    for run_num in range(1, num_runs + 1):
-        logging.info(f"  Run {run_num}/{num_runs}")
+    data_file_path = os.path.join(os.path.dirname(file_path), f"tests_{benchmark}.json")
+    if os.path.exists(data_file_path):
+        with open(data_file_path) as data_file:
+            data = json.load(data_file)["data"]
+
+    for run_num_loop in range(1, num_runs + 1):
+        run_num = run_num_loop
+        logging.info(f"  Run {run_num_loop}/{num_runs}")
+
+        if 0 == run_num_loop % 20:
+            run_num_loop = 20
+        else:
+            run_num_loop = run_num_loop % 20
+        if os.path.exists(data_file_path):
+            with open("/tmp/IN.json", 'w') as input_file:
+                json.dump(data[run_num_loop-1], input_file)
+
         result = run_file_and_capture_output(file_path, implementation)
+        # Delete /tmp/IN.json after each run
+        try:
+            os.remove("/tmp/IN.json")
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logging.warning(f"Failed to delete /tmp/IN.json: {e}")
         
         # Store individual result
         result['run_number'] = run_num
@@ -130,9 +163,9 @@ def run_multiple_times(file_path, implementation, num_runs=10):
     return results, stats
 
 def main():
-    benchmarks = get_folder_names('../benchmarks')
+    benchmarks = get_folder_names('../benchmarks_for_correctness')
     implementations = ['lmql', 'dspy', 'mtllm']
-    num_runs = 20
+    num_runs = 100
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     detailed_csv = f'benchmark_detailed_results_{timestamp}.csv'
@@ -163,9 +196,11 @@ def main():
             processed_files = 0
             
             for benchmark in benchmarks:
+                # if benchmark not in ["expert_answer"]:
+                #     continue
                 for implementation in implementations:
                     total_files += 1
-                    folder_path = f'../benchmarks/{benchmark}/{benchmark}_{implementation}'
+                    folder_path = f'../benchmarks_for_correctness/{benchmark}/{benchmark}_{implementation}'
                     file_path = f'{folder_path}.jac' if implementation == 'mtllm' else f'{folder_path}.py'
                     
                     logging.info(f"Processing {total_files}: {benchmark} - {implementation}")
@@ -214,7 +249,7 @@ def main():
                     processed_files += 1
                     
                     # Run the file multiple times
-                    results, stats = run_multiple_times(file_path, implementation, num_runs)
+                    results, stats = run_multiple_times(file_path, implementation, num_runs, benchmark)
                     
                     # Write detailed results
                     for result in results:
@@ -267,4 +302,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-        

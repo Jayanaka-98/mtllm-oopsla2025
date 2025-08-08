@@ -234,15 +234,15 @@ This evaluation is done mainly through a case study of comparing the code using 
 ### Claim 2: Competitive Accuracy
 *MTLLM(MTP) achieves similar or better accuracy than baseline frameworks*
 
-To support this claim we do an evaluation where we run the benchmark programs 20 trials and take the average success rate. In addition to this, we conduct a thorough evaluation with multiple LLMs using the GSM8k dataset for the math problem benchmark. However, this requires running llama models on local hardware which would produce variable results. We have reasonable timeout limits. Hence, we only include the scripts for running the experiments with OpenAI GPT models.
+To support this claim we do an evaluation where across the 13 benchmarks we run each benchmark with 20 unique inputs and run each benchmark, input pair 5 times. Correctness is evaluated using defined correctness criteria as explained in the paper. In addition to this, we conduct a thorough evaluation with multiple LLMs using the GSM8k dataset for the math problem benchmark. However, this requires running llama models on local hardware which would produce variable results. We have reasonable timeout limits. Hence, we only include the scripts for running the experiments with OpenAI GPT models.
 
-**Evidence**: Run the evaluation suite to reproduce accuracy results from Table 2 in the paper.
+**Evidence**: Run the evaluation suite to reproduce accuracy results shown in Figure 18, 19 and 20.
 
 ```bash
 # (requires OpenAI API key)
 cd eval
 
-# Generate accuracy summary statistics
+# Generate correctness statistics
 python overall_accuracy.py
 
 # Generate evaluation results for the math problem benchmark for the GSM8k dataset.
@@ -295,32 +295,48 @@ This demonstrates the real-world application of MTLLM for dynamic content genera
 
 ```
 mtllm-oopsla2025/
-├── README.md                    # This file
-├── Dockerfile                   # Docker environment setup
-├── setup.bash                   # Automated setup script
-├── benchmarks/                  # Evaluation benchmarks
-│   ├── translation/            # Translation task implementations
-│   ├── text_to_type/           # Text-to-type conversion tasks
-│   ├── mcq_reason/             # Multiple choice reasoning
-│   ├── math_problem/           # Mathematical problem solving
-│   ├── joke_gen/               # Content generation tasks
+├── README.md                   # This file
+├── Dockerfile                  # Docker environment setup
+├── setup.sh                    # Automated setup script
+├── benchmarks/                 # Evaluation benchmarks (main implementations)
 │   ├── essay_reviewer/         # Text analysis tasks
 │   ├── expert_answer/          # Domain-specific QA
-│   ├── taskman/                # Task management
-│   ├── rpg_level_gen/          # Game content generation
-│   ├── personality_finder/     # Personality analysis
+│   ├── joke_gen/               # Content generation tasks
+│   ├── math_problem/           # Mathematical problem solving
+│   ├── mcq_reason/             # Multiple choice reasoning
 │   ├── odd_word_out/           # Pattern recognition
-│   ├── wikipedia/              # Information extraction
-│   └── template/               # Template for new benchmarks
+│   ├── personality_finder/     # Personality analysis
+│   ├── rpg_level_gen/          # Game content generation
+│   ├── taskman/                # Task management
+│   ├── template/               # Template for new benchmarks
+│   ├── text_to_type/           # Text-to-type conversion tasks
+│   ├── translation/            # Translation task implementations
+│   └── wikipedia/              # Information extraction
+├── benchmarks_for_correctness/ # Benchmarks with correctness tests (capable of taking test inputs)
+│   ├── essay_reviewer/         # Text analysis with test cases
+│   ├── expert_answer/          # QA with test cases
+│   ├── joke_gen/               # Content generation with test cases
+│   └── ... (similar structure)
 ├── eval/                       # Evaluation scripts and results
 │   ├── eval.py                 # Main evaluation runner
 │   ├── overall_accuracy.py     # Results aggregation
+│   ├── GSM8k_accuracy.py       # GSM8k dataset evaluation
+│   ├── eval.config.json        # Evaluation configuration
 │   ├── requirements.txt        # Python dependencies
-│   └── local_cache/            # Cached compilation artifacts
-└── jaseci/                     # Core Jaseci ecosystem
+│   ├── gsm8k_code/             # GSM8k evaluation code
+│   ├── local_cache/            # Cached compilation artifacts
+│   ├── output/                 # Evaluation output files
+│   └── sensitivity_eval/       # Sensitivity analysis scripts
+├── examples/                   # Example MTLLM programs
+│   ├── func.jac                # Function examples
+│   ├── method.jac              # Method examples
+│   └── object.jac              # Object examples
+└── jaseci/                     # Core Jaseci ecosystem (submodule)
     ├── jac/                    # Jac language implementation
     ├── jac-mtllm/              # MTLLM(MTP) plugin source
     ├── jac-cloud/              # Cloud deployment tools
+    ├── jac-splice-orc/         # Additional Jac tools
+    ├── docs/                   # Documentation
     └── scripts/                # Utility scripts
 ```
 

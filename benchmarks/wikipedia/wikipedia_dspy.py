@@ -2,7 +2,7 @@ import dspy
 import wikipedia
 from dspy.predict.parameter import Parameter
 
-llm = dspy.LM('openai/gpt-4o')
+llm = dspy.LM('openai/gpt-4o', cache=False, )
 dspy.settings.configure(lm=llm)
 
 

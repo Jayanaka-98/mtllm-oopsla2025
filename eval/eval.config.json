@@ -36,6 +36,10 @@
             "dspy": "../benchmarks/taskman/taskman_dspy.py",
             "jac": "../benchmarks/taskman/taskman_mtllm.jac"
         },
+        "template": {
+            "dspy": "../benchmarks/template/template_dspy.py",
+            "jac": "../benchmarks/template/template_mtllm.jac"
+        },
         "text_to_type": {
             "dspy": "../benchmarks/text_to_type/text_to_type_dspy.py",
             "jac": "../benchmarks/text_to_type/text_to_type_mtllm.jac"

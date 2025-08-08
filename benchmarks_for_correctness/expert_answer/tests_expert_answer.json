@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Technology",
+      "question": "What are Large Language Models?"
+    },
+    {
+      "id": 2,
+      "category": "Medicine",
+      "question": "What causes high blood pressure and how can it be prevented?"
+    },
+    {
+      "id": 3,
+      "category": "Finance",
+      "question": "How do compound interest rates affect long-term investments?"
+    },
+    {
+      "id": 4,
+      "category": "Law",
+      "question": "What are the key differences between civil and criminal law?"
+    },
+    {
+      "id": 5,
+      "category": "Psychology",
+      "question": "How does cognitive behavioral therapy work for treating anxiety?"
+    },
+    {
+      "id": 6,
+      "category": "Engineering",
+      "question": "What are the main principles of sustainable architecture?"
+    },
+    {
+      "id": 7,
+      "category": "Biology",
+      "question": "How does CRISPR gene editing technology work?"
+    },
+    {
+      "id": 8,
+      "category": "History",
+      "question": "What were the main causes of World War I?"
+    },
+    {
+      "id": 9,
+      "category": "Education",
+      "question": "What are the most effective teaching methods for elementary students?"
+    },
+    {
+      "id": 10,
+      "category": "Environmental Science",
+      "question": "How does deforestation impact global climate change?"
+    },
+    {
+      "id": 11,
+      "category": "Business",
+      "question": "What strategies can small businesses use to compete with large corporations?"
+    },
+    {
+      "id": 12,
+      "category": "Physics",
+      "question": "Can you explain quantum entanglement in simple terms?"
+    },
+    {
+      "id": 13,
+      "category": "Nutrition",
+      "question": "What are the health benefits and risks of intermittent fasting?"
+    },
+    {
+      "id": 14,
+      "category": "Art",
+      "question": "How did the Renaissance period influence modern art?"
+    },
+    {
+      "id": 15,
+      "category": "Sports Science",
+      "question": "What is the best way to prevent sports injuries in young athletes?"
+    },
+    {
+      "id": 16,
+      "category": "Cybersecurity",
+      "question": "How can individuals protect themselves from online identity theft?"
+    },
+    {
+      "id": 17,
+      "category": "Philosophy",
+      "question": "What is the difference between moral relativism and moral absolutism?"
+    },
+    {
+      "id": 18,
+      "category": "Agriculture",
+      "question": "How can modern farming practices become more sustainable?"
+    },
+    {
+      "id": 19,
+      "category": "Space Science",
+      "question": "What are the challenges of sending humans to Mars?"
+    },
+    {
+      "id": 20,
+      "category": "Economics",
+      "question": "How does inflation affect different social classes differently?"
+    }
+  ]
+}

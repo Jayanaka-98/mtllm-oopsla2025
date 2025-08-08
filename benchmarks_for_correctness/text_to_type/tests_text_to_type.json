@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Standard Format",
+      "info": "Alice is a 21 years old and works as an engineer at LMQL Inc in Zurich, Switzerland.",
+      "expected": {
+        "name": "Alice",
+        "age": 21,
+        "job": "engineer",
+        "employer": {
+          "employer_name": "LMQL Inc",
+          "location": "Zurich, Switzerland"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "category": "Different Word Order",
+      "info": "Bob, who is 28 years old, works as a software developer at Google in Mountain View, California.",
+      "expected": {
+        "name": "Bob",
+        "age": 28,
+        "job": "software developer",
+        "employer": {
+          "employer_name": "Google",
+          "location": "Mountain View, California"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "category": "Informal Description",
+      "info": "Sarah, 35, is a marketing manager at Apple Inc. based in Cupertino.",
+      "expected": {
+        "name": "Sarah",
+        "age": 35,
+        "job": "marketing manager",
+        "employer": {
+          "employer_name": "Apple Inc.",
+          "location": "Cupertino"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "category": "Complex Job Title",
+      "info": "Dr. Michael Johnson, aged 42, serves as Chief Technology Officer at Microsoft Corporation in Seattle, Washington.",
+      "expected": {
+        "name": "Dr. Michael Johnson",
+        "age": 42,
+        "job": "Chief Technology Officer",
+        "employer": {
+          "employer_name": "Microsoft Corporation",
+          "location": "Seattle, Washington"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "category": "Young Professional",
+      "info": "Emma Chen is 23 and works as a junior data scientist at Facebook in Menlo Park, CA.",
+      "expected": {
+        "name": "Emma Chen",
+        "age": 23,
+        "job": "junior data scientist",
+        "employer": {
+          "employer_name": "Facebook",
+          "location": "Menlo Park, CA"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "category": "International",
+      "info": "Hans Mueller, 45 years old, is employed as a mechanical engineer at BMW Group in Munich, Germany.",
+      "expected": {
+        "name": "Hans Mueller",
+        "age": 45,
+        "job": "mechanical engineer",
+        "employer": {
+          "employer_name": "BMW Group",
+          "location": "Munich, Germany"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "category": "Healthcare",
+      "info": "Dr. Maria Rodriguez, 38, practices as a cardiologist at Mayo Clinic in Rochester, Minnesota.",
+      "expected": {
+        "name": "Dr. Maria Rodriguez",
+        "age": 38,
+        "job": "cardiologist",
+        "employer": {
+          "employer_name": "Mayo Clinic",
+          "location": "Rochester, Minnesota"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "category": "Academia",
+      "info": "Professor James Wilson, 52, teaches computer science at Stanford University in Stanford, California.",
+      "expected": {
+        "name": "Professor James Wilson",
+        "age": 52,
+        "job": "computer science professor",
+        "employer": {
+          "employer_name": "Stanford University",
+          "location": "Stanford, California"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "category": "Startup",
+      "info": "Lisa Park, age 29, is a product manager at TechStart Solutions located in Austin, Texas.",
+      "expected": {
+        "name": "Lisa Park",
+        "age": 29,
+        "job": "product manager",
+        "employer": {
+          "employer_name": "TechStart Solutions",
+          "location": "Austin, Texas"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "category": "Financial Services",
+      "info": "Robert Thompson, 44, is a senior financial analyst working for Goldman Sachs in New York City, NY.",
+      "expected": {
+        "name": "Robert Thompson",
+        "age": 44,
+        "job": "senior financial analyst",
+        "employer": {
+          "employer_name": "Goldman Sachs",
+          "location": "New York City, NY"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "category": "Government",
+      "info": "Jennifer Davis, 31 years old, serves as a policy analyst at the Department of Education in Washington, D.C.",
+      "expected": {
+        "name": "Jennifer Davis",
+        "age": 31,
+        "job": "policy analyst",
+        "employer": {
+          "employer_name": "Department of Education",
+          "location": "Washington, D.C."
+        }
+      }
+    },
+    {
+      "id": 12,
+      "category": "Consulting",
+      "info": "Alexander Kim, 26, is employed as a business consultant at McKinsey & Company in Chicago, Illinois.",
+      "expected": {
+        "name": "Alexander Kim",
+        "age": 26,
+        "job": "business consultant",
+        "employer": {
+          "employer_name": "McKinsey & Company",
+          "location": "Chicago, Illinois"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "category": "Creative Industry",
+      "info": "Sophie Martinez, 27, works as a graphic designer at Adobe Systems in San Francisco, California.",
+      "expected": {
+        "name": "Sophie Martinez",
+        "age": 27,
+        "job": "graphic designer",
+        "employer": {
+          "employer_name": "Adobe Systems",
+          "location": "San Francisco, California"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "category": "Non-profit",
+      "info": "David Lee, aged 33, is a program coordinator at the American Red Cross in Atlanta, Georgia.",
+      "expected": {
+        "name": "David Lee",
+        "age": 33,
+        "job": "program coordinator",
+        "employer": {
+          "employer_name": "American Red Cross",
+          "location": "Atlanta, Georgia"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "category": "Retail",
+      "info": "Rachel Brown, 24, is a store manager at Walmart Inc. in Bentonville, Arkansas.",
+      "expected": {
+        "name": "Rachel Brown",
+        "age": 24,
+        "job": "store manager",
+        "employer": {
+          "employer_name": "Walmart Inc.",
+          "location": "Bentonville, Arkansas"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "category": "Manufacturing",
+      "info": "Thomas Anderson, 39 years old, is a production supervisor at General Motors in Detroit, Michigan.",
+      "expected": {
+        "name": "Thomas Anderson",
+        "age": 39,
+        "job": "production supervisor",
+        "employer": {
+          "employer_name": "General Motors",
+          "location": "Detroit, Michigan"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "category": "Pharmaceutical",
+      "info": "Dr. Amanda White, 41, is a research scientist at Pfizer Inc. in New York, New York.",
+      "expected": {
+        "name": "Dr. Amanda White",
+        "age": 41,
+        "job": "research scientist",
+        "employer": {
+          "employer_name": "Pfizer Inc.",
+          "location": "New York, New York"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "category": "Entertainment",
+      "info": "Kevin Zhang, 30, is a film editor working at Warner Bros. Entertainment in Los Angeles, California.",
+      "expected": {
+        "name": "Kevin Zhang",
+        "age": 30,
+        "job": "film editor",
+        "employer": {
+          "employer_name": "Warner Bros. Entertainment",
+          "location": "Los Angeles, California"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "category": "Energy",
+      "info": "Michelle Taylor, aged 36, is an environmental engineer at ExxonMobil Corporation in Houston, Texas.",
+      "expected": {
+        "name": "Michelle Taylor",
+        "age": 36,
+        "job": "environmental engineer",
+        "employer": {
+          "employer_name": "ExxonMobil Corporation",
+          "location": "Houston, Texas"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "category": "Transportation",
+      "info": "Daniel Garcia, 32, serves as a logistics coordinator at FedEx Corporation in Memphis, Tennessee.",
+      "expected": {
+        "name": "Daniel Garcia",
+        "age": 32,
+        "job": "logistics coordinator",
+        "employer": {
+          "employer_name": "FedEx Corporation",
+          "location": "Memphis, Tennessee"
+        }
+      }
+    }
+  ]
+}

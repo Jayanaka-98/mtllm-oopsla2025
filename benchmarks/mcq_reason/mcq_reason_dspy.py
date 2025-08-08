@@ -1,6 +1,6 @@
 import dspy
 
-llm = dspy.LM('openai/gpt-4o')
+llm = dspy.LM('openai/gpt-4o', cache=False, )
 dspy.settings.configure(lm=llm)
 
 
@@ -17,4 +17,4 @@ question = (
 )
 choices = "(A) 08/29/2021 (B) 08/28/2021 (C) 08/29/1925 (D) 08/30/2021 (E) 05/25/2021 (F) 09/19/2021"
 ans = gen_answer(question=question, choices=choices)
-print(ans.rationale, ans.answer)
+print(ans.reasoning, ans.answer)

@@ -1,8 +1,7 @@
 import dspy
 
-llm = dspy.LM('openai/gpt-4o')
+llm = dspy.LM('openai/gpt-4o', cache=False, )
 dspy.settings.configure(lm=llm)
-
 
 class Essay:
     def __init__(self, essay: str):

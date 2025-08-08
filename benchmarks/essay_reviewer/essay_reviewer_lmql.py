@@ -1,11 +1,13 @@
 import lmql
 
+import os
 
+os.environ['NO_CACHE'] = '1'
 class Essay:
     def __init__(self, essay: str):
         self.essay = essay
 
-    @lmql.query
+    @lmql.query(cache=False)
     def essay_judge(self, criteria: str) -> str:
         """lmql
         "Evaluate the given essay based on the given criteria. Provide Detailed Judgement.\n"
@@ -15,7 +17,7 @@ class Essay:
         return judgement
         """
 
-    @lmql.query
+    @lmql.query(cache=False)
     def generate_summary(self, judgements: dict) -> str:
         """lmql
         "Generate a summary with the given judgements.\n"
@@ -25,7 +27,7 @@ class Essay:
         return summary
         """
 
-    @lmql.query
+    @lmql.query(cache=True)
     def give_grade(self, summary: str) -> str:
         """lmql
         "Give essay a letter grade (A-D).\n"

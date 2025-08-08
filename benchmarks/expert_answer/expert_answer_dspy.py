@@ -2,9 +2,13 @@ import dspy
 
 dspy.settings.cache = None
 
-llm = dspy.LM('openai/gpt-4o', temperature=0.2)
+llm = dspy.LM('openai/gpt-4o', temperature=0.2, cache=False, )
 dspy.settings.configure(lm=llm)
 
+# dspy.configure_cache(
+#     enable_disk_cache=False,
+#     enable_memory_cache=False,
+# )
 
 class GetExpert(dspy.Signature):
     """Find the Expert Profession to answer the given question."""
