@@ -163,7 +163,7 @@ def run_multiple_times(file_path, implementation, num_runs, benchmark):
     return results, stats
 
 def main():
-    benchmarks = get_folder_names('../benchmarks')
+    benchmarks = get_folder_names('../benchmarks_for_correctness')
     implementations = ['lmql', 'dspy', 'mtllm']
     num_runs = 100
     
@@ -200,7 +200,7 @@ def main():
                 #     continue
                 for implementation in implementations:
                     total_files += 1
-                    folder_path = f'../benchmarks/{benchmark}/{benchmark}_{implementation}'
+                    folder_path = f'../benchmarks_for_correctness/{benchmark}/{benchmark}_{implementation}'
                     file_path = f'{folder_path}.jac' if implementation == 'mtllm' else f'{folder_path}.py'
                     
                     logging.info(f"Processing {total_files}: {benchmark} - {implementation}")
