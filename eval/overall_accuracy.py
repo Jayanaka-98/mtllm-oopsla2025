@@ -5,6 +5,7 @@ import time
 import logging
 import statistics
 from datetime import datetime
+import json
 
 # Disable OpenAI token caching for inference benchmarking
 os.environ["OPENAI_API_CACHE"] = "false"
@@ -90,17 +91,38 @@ def run_file_and_capture_output(file_path, implementation):
             'command': 'Error before execution'
         }
 
-def run_multiple_times(file_path, implementation, num_runs=10):
+def run_multiple_times(file_path, implementation, num_runs, benchmark):
     """Run a file multiple times and collect statistics"""
     results = []
     execution_times = []
     success_count = 0
-    
+
     logging.info(f"Running {file_path} {num_runs} times...")
-    
-    for run_num in range(1, num_runs + 1):
-        logging.info(f"  Run {run_num}/{num_runs}")
+    data_file_path = os.path.join(os.path.dirname(file_path), f"tests_{benchmark}.json")
+    if os.path.exists(data_file_path):
+        with open(data_file_path) as data_file:
+            data = json.load(data_file)["data"]
+
+    for run_num_loop in range(1, num_runs + 1):
+        run_num = run_num_loop
+        logging.info(f"  Run {run_num_loop}/{num_runs}")
+
+        if 0 == run_num_loop % 20:
+            run_num_loop = 20
+        else:
+            run_num_loop = run_num_loop % 20
+        if os.path.exists(data_file_path):
+            with open("/tmp/IN.json", 'w') as input_file:
+                json.dump(data[run_num_loop-1], input_file)
+
         result = run_file_and_capture_output(file_path, implementation)
+        # Delete /tmp/IN.json after each run
+        try:
+            os.remove("/tmp/IN.json")
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logging.warning(f"Failed to delete /tmp/IN.json: {e}")
         
         # Store individual result
         result['run_number'] = run_num
@@ -143,7 +165,7 @@ def run_multiple_times(file_path, implementation, num_runs=10):
 def main():
     benchmarks = get_folder_names('../benchmarks')
     implementations = ['lmql', 'dspy', 'mtllm']
-    num_runs = 20
+    num_runs = 100
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     detailed_csv = f'benchmark_detailed_results_{timestamp}.csv'
@@ -174,7 +196,7 @@ def main():
             processed_files = 0
             
             for benchmark in benchmarks:
-                # if benchmark not in ["rpg_level_gen"]:
+                # if benchmark not in ["expert_answer"]:
                 #     continue
                 for implementation in implementations:
                     total_files += 1
@@ -227,7 +249,7 @@ def main():
                     processed_files += 1
                     
                     # Run the file multiple times
-                    results, stats = run_multiple_times(file_path, implementation, num_runs)
+                    results, stats = run_multiple_times(file_path, implementation, num_runs, benchmark)
                     
                     # Write detailed results
                     for result in results:
@@ -280,4 +302,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-        
