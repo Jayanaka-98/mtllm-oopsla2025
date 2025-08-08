@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Simple Nouns",
+      "english_word": "cheese",
+      "correct_translation": "fromage"
+    },
+    {
+      "id": 2,
+      "category": "Animals",
+      "english_word": "butterfly",
+      "correct_translation": "papillon"
+    },
+    {
+      "id": 3,
+      "category": "Food",
+      "english_word": "chocolate cake",
+      "correct_translation": "gâteau au chocolat"
+    },
+    {
+      "id": 4,
+      "category": "Colors",
+      "english_word": "dark blue",
+      "correct_translation": "bleu foncé"
+    },
+    {
+      "id": 5,
+      "category": "Household Items",
+      "english_word": "wooden spoon",
+      "correct_translation": "cuillère en bois"
+    },
+    {
+      "id": 6,
+      "category": "Transportation",
+      "english_word": "red bicycle",
+      "correct_translation": "vélo rouge"
+    },
+    {
+      "id": 7,
+      "category": "Nature",
+      "english_word": "mountain peak",
+      "correct_translation": "sommet de montagne"
+    },
+    {
+      "id": 8,
+      "category": "Clothing",
+      "english_word": "winter coat",
+      "correct_translation": "manteau d'hiver"
+    },
+    {
+      "id": 9,
+      "category": "Animals",
+      "english_word": "golden retriever",
+      "correct_translation": "golden retriever"
+    },
+    {
+      "id": 10,
+      "category": "Technology",
+      "english_word": "smartphone",
+      "correct_translation": "téléphone intelligent"
+    },
+    {
+      "id": 11,
+      "category": "Body Parts",
+      "english_word": "left hand",
+      "correct_translation": "main gauche"
+    },
+    {
+      "id": 12,
+      "category": "Weather",
+      "english_word": "heavy rain",
+      "correct_translation": "pluie forte"
+    },
+    {
+      "id": 13,
+      "category": "Emotions",
+      "english_word": "happiness",
+      "correct_translation": "bonheur"
+    },
+    {
+      "id": 14,
+      "category": "Sports",
+      "english_word": "tennis ball",
+      "correct_translation": "balle de tennis"
+    },
+    {
+      "id": 15,
+      "category": "Plants",
+      "english_word": "rose garden",
+      "correct_translation": "jardin de roses"
+    },
+    {
+      "id": 16,
+      "category": "Time",
+      "english_word": "midnight",
+      "correct_translation": "minuit"
+    },
+    {
+      "id": 17,
+      "category": "Food",
+      "english_word": "fresh bread",
+      "correct_translation": "pain frais"
+    },
+    {
+      "id": 18,
+      "category": "Professions",
+      "english_word": "fire fighter",
+      "correct_translation": "pompier"
+    },
+    {
+      "id": 19,
+      "category": "Music",
+      "english_word": "piano lesson",
+      "correct_translation": "leçon de piano"
+    },
+    {
+      "id": 20,
+      "category": "Architecture",
+      "english_word": "stone bridge",
+      "correct_translation": "pont en pierre"
+    }
+  ]
+}

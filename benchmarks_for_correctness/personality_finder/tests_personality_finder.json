@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Civil Rights Leader",
+      "name": "Martin Luther King Jr.",
+      "expected_full_name": "Martin Luther King Jr.",
+      "expected_yod": 1968,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 2,
+      "category": "Scientist",
+      "name": "Albert Einstein",
+      "expected_full_name": "Albert Einstein",
+      "expected_yod": 1955,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 3,
+      "category": "Artist",
+      "name": "Leonardo da Vinci",
+      "expected_full_name": "Leonardo da Vinci",
+      "expected_yod": 1519,
+      "expected_personality": "AMBIVERT"
+    },
+    {
+      "id": 4,
+      "category": "Writer",
+      "name": "William Shakespeare",
+      "expected_full_name": "William Shakespeare",
+      "expected_yod": 1616,
+      "expected_personality": "AMBIVERT"
+    },
+    {
+      "id": 5,
+      "category": "Political Leader",
+      "name": "Winston Churchill",
+      "expected_full_name": "Winston Leonard Spencer Churchill",
+      "expected_yod": 1965,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 6,
+      "category": "Scientist",
+      "name": "Marie Curie",
+      "expected_full_name": "Marie Skłodowska Curie",
+      "expected_yod": 1934,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 7,
+      "category": "Inventor",
+      "name": "Thomas Edison",
+      "expected_full_name": "Thomas Alva Edison",
+      "expected_yod": 1931,
+      "expected_personality": "AMBIVERT"
+    },
+    {
+      "id": 8,
+      "category": "Writer",
+      "name": "Emily Dickinson",
+      "expected_full_name": "Emily Elizabeth Dickinson",
+      "expected_yod": 1886,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 9,
+      "category": "Political Leader",
+      "name": "John F. Kennedy",
+      "expected_full_name": "John Fitzgerald Kennedy",
+      "expected_yod": 1963,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 10,
+      "category": "Scientist",
+      "name": "Charles Darwin",
+      "expected_full_name": "Charles Robert Darwin",
+      "expected_yod": 1882,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 11,
+      "category": "Artist",
+      "name": "Vincent van Gogh",
+      "expected_full_name": "Vincent Willem van Gogh",
+      "expected_yod": 1890,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 12,
+      "category": "Musician",
+      "name": "Wolfgang Amadeus Mozart",
+      "expected_full_name": "Wolfgang Amadeus Mozart",
+      "expected_yod": 1791,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 13,
+      "category": "Entrepreneur",
+      "name": "Steve Jobs",
+      "expected_full_name": "Steven Paul Jobs",
+      "expected_yod": 2011,
+      "expected_personality": "AMBIVERT"
+    },
+    {
+      "id": 14,
+      "category": "Philosopher",
+      "name": "Socrates",
+      "expected_full_name": "Socrates",
+      "expected_yod": -399,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 15,
+      "category": "Writer",
+      "name": "Mark Twain",
+      "expected_full_name": "Samuel Langhorne Clemens",
+      "expected_yod": 1910,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 16,
+      "category": "Scientist",
+      "name": "Isaac Newton",
+      "expected_full_name": "Sir Isaac Newton",
+      "expected_yod": 1727,
+      "expected_personality": "INTROVERT"
+    },
+    {
+      "id": 17,
+      "category": "Explorer",
+      "name": "Christopher Columbus",
+      "expected_full_name": "Christopher Columbus",
+      "expected_yod": 1506,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 18,
+      "category": "Religious Figure",
+      "name": "Mother Teresa",
+      "expected_full_name": "Mary Teresa Bojaxhiu",
+      "expected_yod": 1997,
+      "expected_personality": "AMBIVERT"
+    },
+    {
+      "id": 19,
+      "category": "Military Leader",
+      "name": "Napoleon Bonaparte",
+      "expected_full_name": "Napoleon Bonaparte",
+      "expected_yod": 1821,
+      "expected_personality": "EXTROVERT"
+    },
+    {
+      "id": 20,
+      "category": "Activist",
+      "name": "Mahatma Gandhi",
+      "expected_full_name": "Mohandas Karamchand Gandhi",
+      "expected_yod": 1948,
+      "expected_personality": "AMBIVERT"
+    }
+  ]
+}

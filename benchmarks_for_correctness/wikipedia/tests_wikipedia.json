@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Company Information",
+      "question": "Where is Apple headquarters located?",
+      "expected_info": "Cupertino, California"
+    },
+    {
+      "id": 2,
+      "category": "Biography",
+      "question": "Who is Elon Musk?",
+      "expected_info": "CEO of Tesla and SpaceX, entrepreneur, born in South Africa"
+    },
+    {
+      "id": 3,
+      "category": "Historical Events",
+      "question": "When did World War II end?",
+      "expected_info": "September 2, 1945"
+    },
+    {
+      "id": 4,
+      "category": "Geography",
+      "question": "What is the capital of Australia?",
+      "expected_info": "Canberra"
+    },
+    {
+      "id": 5,
+      "category": "Science",
+      "question": "What is the speed of light in a vacuum?",
+      "expected_info": "299,792,458 meters per second"
+    },
+    {
+      "id": 6,
+      "category": "Technology",
+      "question": "When was the first iPhone released?",
+      "expected_info": "June 29, 2007"
+    },
+    {
+      "id": 7,
+      "category": "Literature",
+      "question": "Who wrote the novel '1984'?",
+      "expected_info": "George Orwell"
+    },
+    {
+      "id": 8,
+      "category": "Space",
+      "question": "Which planet is closest to the Sun?",
+      "expected_info": "Mercury"
+    },
+    {
+      "id": 9,
+      "category": "Architecture",
+      "question": "How tall is the Eiffel Tower?",
+      "expected_info": "330 meters (1,083 feet) including antennas"
+    },
+    {
+      "id": 10,
+      "category": "Biology",
+      "question": "How many chambers does a human heart have?",
+      "expected_info": "Four chambers"
+    },
+    {
+      "id": 11,
+      "category": "Sports",
+      "question": "Which country has won the most FIFA World Cups?",
+      "expected_info": "Brazil (5 times)"
+    },
+    {
+      "id": 12,
+      "category": "Chemistry",
+      "question": "What is the chemical symbol for gold?",
+      "expected_info": "Au"
+    },
+    {
+      "id": 13,
+      "category": "Movies",
+      "question": "Who directed the movie 'Inception'?",
+      "expected_info": "Christopher Nolan"
+    },
+    {
+      "id": 14,
+      "category": "Music",
+      "question": "Which band released the album 'Abbey Road'?",
+      "expected_info": "The Beatles"
+    },
+    {
+      "id": 15,
+      "category": "Mathematics",
+      "question": "What is the value of pi to 5 decimal places?",
+      "expected_info": "3.14159"
+    },
+    {
+      "id": 16,
+      "category": "Current Events",
+      "question": "When was the Large Hadron Collider first operational?",
+      "expected_info": "September 10, 2008"
+    },
+    {
+      "id": 17,
+      "category": "Art",
+      "question": "Where is the painting 'Starry Night' housed?",
+      "expected_info": "Museum of Modern Art (MoMA) in New York City"
+    },
+    {
+      "id": 18,
+      "category": "Politics",
+      "question": "How many amendments are there to the US Constitution?",
+      "expected_info": "27 amendments"
+    },
+    {
+      "id": 19,
+      "category": "Nature",
+      "question": "What is the largest mammal in the world?",
+      "expected_info": "Blue whale"
+    },
+    {
+      "id": 20,
+      "category": "Economics",
+      "question": "What does GDP stand for?",
+      "expected_info": "Gross Domestic Product"
+    }
+  ]
+}

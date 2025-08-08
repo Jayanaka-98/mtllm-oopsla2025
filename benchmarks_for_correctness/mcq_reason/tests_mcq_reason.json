@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Date/Time Reasoning",
+      "question": "It was Sept. 1st, 2021 a week ago. What is the date 10 days ago in MM/DD/YYYY?",
+      "choices": "(A) 08/29/2021 (B) 08/28/2021 (C) 08/29/1925 (D) 08/30/2021 (E) 05/25/2021 (F) 09/19/2021",
+      "correct_answer": "B"
+    },
+    {
+      "id": 2,
+      "category": "Math Word Problem",
+      "question": "Sarah has 24 apples. She gives away 1/3 of them to her friends and then buys 8 more apples. How many apples does she have now?",
+      "choices": "(A) 16 (B) 20 (C) 24 (D) 28 (E) 32 (F) 40",
+      "correct_answer": "C"
+    },
+    {
+      "id": 3,
+      "category": "Logic Puzzle",
+      "question": "If all roses are flowers, and some flowers are red, which statement must be true?",
+      "choices": "(A) All roses are red (B) Some roses are red (C) All flowers are roses (D) Some roses might be red (E) No roses are red (F) All red things are roses",
+      "correct_answer": "D"
+    },
+    {
+      "id": 4,
+      "category": "Pattern Recognition",
+      "question": "What comes next in the sequence: 2, 6, 18, 54, ?",
+      "choices": "(A) 108 (B) 162 (C) 216 (D) 270 (E) 324 (F) 378",
+      "correct_answer": "B"
+    },
+    {
+      "id": 5,
+      "category": "Physics",
+      "question": "A ball is dropped from a height of 20 meters. Ignoring air resistance, approximately how long does it take to hit the ground? (g = 9.8 m/s²)",
+      "choices": "(A) 1.0 seconds (B) 1.4 seconds (C) 2.0 seconds (D) 2.8 seconds (E) 4.0 seconds (F) 5.6 seconds",
+      "correct_answer": "C"
+    },
+    {
+      "id": 6,
+      "category": "Geography",
+      "question": "Which country has the longest coastline in the world?",
+      "choices": "(A) Russia (B) Australia (C) Canada (D) United States (E) Brazil (F) Norway",
+      "correct_answer": "C"
+    },
+    {
+      "id": 7,
+      "category": "Chemistry",
+      "question": "What is the chemical formula for table salt?",
+      "choices": "(A) NaCl (B) H2O (C) CO2 (D) CaCl2 (E) KCl (F) MgSO4",
+      "correct_answer": "A"
+    },
+    {
+      "id": 8,
+      "category": "Probability",
+      "question": "What is the probability of rolling two dice and getting a sum of 7?",
+      "choices": "(A) 1/12 (B) 1/9 (C) 1/6 (D) 1/4 (E) 1/3 (F) 1/2",
+      "correct_answer": "C"
+    },
+    {
+      "id": 9,
+      "category": "History",
+      "question": "In which year did World War II end?",
+      "choices": "(A) 1943 (B) 1944 (C) 1945 (D) 1946 (E) 1947 (F) 1948",
+      "correct_answer": "C"
+    },
+    {
+      "id": 10,
+      "category": "Reading Comprehension",
+      "question": "Based on the sentence 'The library will be closed next Monday due to a holiday,' when will the library reopen?",
+      "choices": "(A) Sunday (B) Monday (C) Tuesday (D) Wednesday (E) Next Friday (F) Cannot be determined",
+      "correct_answer": "F"
+    },
+    {
+      "id": 11,
+      "category": "Algebra",
+      "question": "If 3x + 7 = 22, what is the value of x?",
+      "choices": "(A) 3 (B) 4 (C) 5 (D) 6 (E) 7 (F) 8",
+      "correct_answer": "C"
+    },
+    {
+      "id": 12,
+      "category": "Word Problem",
+      "question": "A train travels 180 miles in 3 hours. At this rate, how far will it travel in 5 hours?",
+      "choices": "(A) 240 miles (B) 270 miles (C) 300 miles (D) 330 miles (E) 360 miles (F) 450 miles",
+      "correct_answer": "C"
+    },
+    {
+      "id": 13,
+      "category": "Biology",
+      "question": "Which organ in the human body produces insulin?",
+      "choices": "(A) Liver (B) Kidney (C) Pancreas (D) Heart (E) Lungs (F) Stomach",
+      "correct_answer": "C"
+    },
+    {
+      "id": 14,
+      "category": "Critical Thinking",
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      "choices": "(A) 1 minute (B) 5 minutes (C) 20 minutes (D) 100 minutes (E) 500 minutes (F) 2000 minutes",
+      "correct_answer": "B"
+    },
+    {
+      "id": 15,
+      "category": "Geometry",
+      "question": "What is the area of a circle with radius 5 units? (Use π ≈ 3.14)",
+      "choices": "(A) 15.7 sq units (B) 31.4 sq units (C) 78.5 sq units (D) 157 sq units (E) 314 sq units (F) 628 sq units",
+      "correct_answer": "C"
+    },
+    {
+      "id": 16,
+      "category": "Language Arts",
+      "question": "Which word is spelled correctly?",
+      "choices": "(A) Recieve (B) Achieve (C) Beleive (D) Releive (E) Percieve (F) Concieve",
+      "correct_answer": "B"
+    },
+    {
+      "id": 17,
+      "category": "Economics",
+      "question": "If demand for a product increases while supply remains constant, what typically happens to the price?",
+      "choices": "(A) Price decreases (B) Price increases (C) Price stays the same (D) Price becomes zero (E) Price becomes infinite (F) Cannot be determined",
+      "correct_answer": "B"
+    },
+    {
+      "id": 18,
+      "category": "Computer Science",
+      "question": "In binary, what is the decimal number 13 represented as?",
+      "choices": "(A) 1011 (B) 1101 (C) 1001 (D) 1111 (E) 1010 (F) 1100",
+      "correct_answer": "B"
+    },
+    {
+      "id": 19,
+      "category": "Reasoning",
+      "question": "Mary is taller than John. John is taller than Susan. Which statement must be true?",
+      "choices": "(A) Susan is the tallest (B) Mary is shorter than Susan (C) John is the tallest (D) Mary is taller than Susan (E) All three are the same height (F) Cannot be determined",
+      "correct_answer": "D"
+    },
+    {
+      "id": 20,
+      "category": "Science",
+      "question": "What happens to the volume of a gas when temperature increases and pressure remains constant?",
+      "choices": "(A) Volume decreases (B) Volume increases (C) Volume stays the same (D) Volume becomes zero (E) Volume doubles (F) Cannot be determined",
+      "correct_answer": "B"
+    }
+  ]
+}

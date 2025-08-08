@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "Luxury Brands",
+      "options": "[Bentley, Ferrari, Lamborghini, Casio, Toyota]"
+    },
+    {
+      "id": 2,
+      "category": "Animals",
+      "options": "[Dog, Cat, Bird, Fish, Elephant]"
+    },
+    {
+      "id": 3,
+      "category": "Food Items",
+      "options": "[Apple, Banana, Carrot, Orange, Grape]"
+    },
+    {
+      "id": 4,
+      "category": "Geometric Shapes",
+      "options": "[Circle, Square, Triangle, Rectangle, Sphere]"
+    },
+    {
+      "id": 5,
+      "category": "Musical Instruments",
+      "options": "[Piano, Guitar, Violin, Drums, Microphone]"
+    },
+    {
+      "id": 6,
+      "category": "Planets",
+      "options": "[Mercury, Venus, Earth, Mars, Moon]"
+    },
+    {
+      "id": 7,
+      "category": "Sports",
+      "options": "[Football, Basketball, Tennis, Baseball, Chess]"
+    },
+    {
+      "id": 8,
+      "category": "Body Parts",
+      "options": "[Heart, Liver, Kidney, Brain, Skin]"
+    },
+    {
+      "id": 9,
+      "category": "Materials",
+      "options": "[Gold, Silver, Copper, Iron, Wood]"
+    },
+    {
+      "id": 10,
+      "category": "Weather Phenomena",
+      "options": "[Rain, Snow, Hail, Wind, Rainbow]"
+    },
+    {
+      "id": 11,
+      "category": "Transportation",
+      "options": "[Car, Bus, Train, Airplane, Bicycle]"
+    },
+    {
+      "id": 12,
+      "category": "Academic Subjects",
+      "options": "[Mathematics, Science, History, English, Lunch]"
+    },
+    {
+      "id": 13,
+      "category": "Colors",
+      "options": "[Red, Blue, Green, Yellow, Bright]"
+    },
+    {
+      "id": 14,
+      "category": "Technology",
+      "options": "[Computer, Smartphone, Tablet, Television, Hammer]"
+    },
+    {
+      "id": 15,
+      "category": "Numbers",
+      "options": "[Two, Four, Six, Eight, Three]"
+    },
+    {
+      "id": 16,
+      "category": "Clothing",
+      "options": "[Shirt, Pants, Shoes, Hat, Towel]"
+    },
+    {
+      "id": 17,
+      "category": "Countries/Cities",
+      "options": "[France, Germany, Italy, Spain, Paris]"
+    },
+    {
+      "id": 18,
+      "category": "Literature",
+      "options": "[Novel, Poem, Essay, Article, Movie]"
+    },
+    {
+      "id": 19,
+      "category": "Time Periods",
+      "options": "[Second, Minute, Hour, Day, Distance]"
+    },
+    {
+      "id": 20,
+      "category": "Programming Languages",
+      "options": "[Python, Java, JavaScript, HTML, C++]"
+    }
+  ]
+}
